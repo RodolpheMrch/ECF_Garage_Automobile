@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Source+Code+Pro:wght@300;400;500;600&display=swap');
+
+/*CUSTOM*/
+:root {
+
+    /*COLORS*/
+
+
+    /*TYPO*/
+
+
+
+    --fs-1: 2.125rem;
+    --fs-2: 1.875rem;
+    --fs-3: 1.5rem;
+    --fs-4: 1.375rem;
+    --fs-5: 1.125rem;
+    --fs-6: 0.875rem;
+    --fs-7: 0.625rem;
+
+    --fw-400: 400;
+    --fw-600: 600;
+
+
+    /*TRANSITION*/
+    --transition: 0.5s ease;
+
+
+    /*SPACING*/
+
+
+    /*RADIUS*/
+    --radius-10: 10px;
+    --radius-14: 14px;
+    --radius-18: 18px;
+
+
+    /*SHADOW*/
+
+
+}
+
+/*RESET*/
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f1f1;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+button,
+input {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+button { cursor: pointer; }
+
+input { width: 100%; }
+
+ion-icon { pointer-events: none; }
+
+/*REUSED STYLE*/
+
+button, a { transition: var(--transition); }
+
+section { padding-inline: 30px; }
+
+.h1,
+.h2,
+.h3 {
+    line-height: 1.4;
+}
+
+.h1 {
+    font-size: var(--fs-1);
+    text-transform: uppercase;
+}
+
+.h2,
+.h3 { font-weight: var(--fw-400); }
+
+.h2 { font-size: var(--fs-2); }
+
+.h3 { font-size: var(--fs-4); }
+
+.w-100 { width: 100%; }
+
+/*************************************************************************
+
+/*HEADER*/
+/*HEADER*/
+
+header .band a {
+    text-decoration: none;
+    color: white;
+}
+header .band a:hover {
+    color: orange;
+}
+
+header .band {
+    padding: 0.3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
+header .band .links {
+    display: flex;
+    color: #f1f1f1;
+}
+
+header .band .links li {
+    color: white;
+    text-decoration: none;
+    margin-right: .9rem;
+}
+
+.band ul li i {
+    font-size: 1.3rem;
+}
+
+.band .left {
+    margin-left: .9rem;
+}
+
+nav {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    color: orange;
+    margin-left: .9rem;
+}
+
+nav .links {
+    display: flex;
+    gap: 1rem;
+    text-transform: uppercase;
+}
+
+nav .links a {
+    font-size: 1.2rem;
+    color: black;
+}
+nav .links a:hover {
+    color: orange;
+}
+
+
+/*HERO*/
+/*HERO*/
+
+.services {
+    padding-top: 1rem;
+    background: url(../images/edp-metier-devenir-electricien-de-maintenance-automobile-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services .container {
+    z-index: 9999;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    color: white;
+    filter: none;
+}
+
+.services h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+/*FEATURED CAR*/
+/*FEATURED CAR*/
+
+.featured-car {
+    padding-top: 1rem;
+}
+
+.featured-car .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.featured-car h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+/*REVIEWS*/
+/*REVIEWS*/
+
+.testimonials {
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+} 
+
+.border {
+    width: 160px;
+    height: 5px;
+    background: orange;
+    margin: 26px auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col {
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 30px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.stars {
+    color: orange;
+    margin-bottom: 15px;
+}
+
+
+/*FOOTER*/
+/*FOOTER*/
+
+
+/*MEDIA QUERIES*/
+/*MEDIA QUERIES*/
+
+@media screen and (max-width:960px) {
+    .col{
+      flex: 100%;
+      max-width: 80%;
+    }
+}
+    
+@media screen and (max-width:600px) {
+    .col{
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+
