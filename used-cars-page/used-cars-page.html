@@ -12,6 +12,41 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    
+    <?php include("../header.php"); ?>
+
+    <section class="section featured-cars">
+        <div class="section-heading">
+            <h2>Tout nos véhicules d'occasions</h2>
+
+            <div class="filters">
+                <!-- BRAND SELECT -->
+                <label for="brand-select">Marque:</label>
+                <select name="brand" id="brand-select">
+                    <option value="">Choisissez une marque</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Mercedes">Mercedes</option>
+                </select>
+
+                <!-- KILOMETERS SELECT -->
+                <label for="kilometers">Kilomètres</label>
+                <input type="range" name="kilometers" id="kilometers" min="0" max="160000">
+
+                <!-- PRICE SELECTED -->
+                <label for="price">Prix</label>
+                <input type="range" name="kilometers" id="kilometers" min="0" max="160000">
+            </div>
+
+        </div>
+        <div class="container">
+
+        </div>
+    </section>
+
+
+    <?php include("../footer.php"); ?>
+
+    <!-- JS -->
+    <!-- ICONS -->
 </body>
 </html>

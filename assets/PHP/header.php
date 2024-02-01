@@ -63,3 +63,16 @@
 
         </nav>
     </header>
+
+    <div class="login-form-container">
+
+        <span class="ri-close-line" id="close-login-form"></span>
+
+        <form action="">
+            <h3>identifiants</h3>
+            <input type="email" placeholder="Email" class="box">
+            <input type="password" placeholder="Mot de passe" class="box">
+            <p><a href="#">Mot de passe oublié ?</a></p>
+            <input type="submit" value="se connecter" class="btn">
+        </form>
+    </div>

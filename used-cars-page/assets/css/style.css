@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Source+Code+Pro:wght@300;400;500;600&display=swap');
+
+
+/*  */
+/*  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: 'Open Source Pro', sans-serif;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* REUSED STYLE */
+/* REUSED STYLE */
+
+.section-heading { 
+    padding: 20px; 
+}
+
+.section-heading h2 {
+    text-align: center;
+}
+
+.section-heading .filters {
+    text-align: center;
+    margin-top: 10px;
+}
